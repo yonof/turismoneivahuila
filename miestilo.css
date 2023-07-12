@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Unna:wght@300;400&display=swap');
+
+*{
+  margin: 5;
+  padding: 3;
+  box-sizing: border-box;
+  font-family: 'Playfair Display';
+}  
+
+
+h1 {
+    background-color: transparent;
+    font-size: 30px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+h2 {
+    border-style: solid;
+    border-color: transparent;
+
+}
+
+h2.one{
+    border-style: inherit;
+    border-color: blue;
+}
+
+img{
+    border-radius: 10%;
+    width: 500px;
+    height: 550px;
+}
+
+.header{
+    position: absolute;
+    top: 20;
+    left: 10;
+    width: 90%;
+    padding: 20px 10%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    text-decoration: none;
+    
+}
+
+.header1 h1{
+    justify-content: center;
+    align-items: center;
+    font-style: 25px;
+    color: black;
+    text-decoration:none;
+    font-weight: 700;
+    width: 300px;
+    position: static;
+    padding: 25px 2%;
+    color: blue;
+    
+}
+.logo h3{
+    font-size: 30px;
+    font-weight: 700;
+}
+body{
+    background: burlywood;
+}
+.navbar a{
+text-decoration: none;
+position: static;
+padding: 25px 25%
+
+
+}
+
+.tabla{
+   font-size: 30px;
+    
+}
+
+.tabla h1{
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+
+     
+ }
+
+
+
+
+ body {
+	text-align: center;
+	font-family: sans-serif;
+	margin: 0;
+}
+
+.modal {
+	width: 100%;
+	height: 100vh;
+	background: rgba(0,0,0,0.8);
+	
+	position: absolute;
+	top: 0;
+	left: 0;
+	
+	display: flex;
+	
+	animation: modal 2s 3s forwards;
+	visibility: hidden;
+	opacity: 0;
+}
+
+.contenido {
+	margin: auto;
+	width: 20%;
+	height: 20%;
+	background: white;
+	border-radius: 10px;
+}
+
+
+.contenido img{
+	margin: auto;
+	width: 40%;
+	height: 40%;
+	background: white;
+	border-radius: 10px;
+}
+
+#cerrar {
+	display: none;
+}
+
+#cerrar + label {
+	position: fixed;
+	color: #fff;
+	font-size: 25px;
+	z-index: 50;
+	background: darkred;
+	height: 40px;
+	width: 40px;
+	line-height: 40px;
+	border-radius: 50%;
+	right: 150px;
+	top: 150px;
+	cursor: pointer;
+	
+	animation: modal 2s 3s forwards;
+	visibility: hidden;
+	opacity: 0;
+}
+
+#cerrar:checked + label, #cerrar:checked ~ .modal {
+	display: none;
+}
+
+@keyframes modal {
+	100% {
+		visibility: visible;
+		opacity: 1;
+	}
+}
